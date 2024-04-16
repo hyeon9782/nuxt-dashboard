@@ -1,6 +1,10 @@
 <script setup lang="ts">
 // auto import 가능!
 const { x, y } = useMouse();
+
+// plugins에서 정의한 함수 사용하기
+const { $hello } = useNuxtApp();
+$hello("dddd");
 </script>
 
 <template>
