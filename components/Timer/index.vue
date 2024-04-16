@@ -1,9 +1,5 @@
 <template lang="">
-  <div>
-    LOGIN PAGE
-
-    <Timer />
-  </div>
+  <div>Timer Components</div>
 </template>
 <script>
 export default {};
