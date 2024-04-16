@@ -1,6 +1,6 @@
 <script setup lang="ts">
 // auto import 가능!
-const { x, y } = useMouse();
+// const { x, y } = useMouse();
 
 // plugins에서 정의한 함수 사용하기
 const { $hello } = useNuxtApp();
@@ -16,7 +16,9 @@ definePageMeta({
   <div class="Main">
     HELLO NUXT
     <IconsBell />
-    <div>{{ x }} , {{ y }}</div>
+    <!-- 마크다운을 읽는 패키지
+    <ContentDoc /> -->
+    <!-- <div>{{ x }} , {{ y }}</div> -->
     <img src="@/assets/flutter.png" alt="nuxt" />
     <img src="/chart.svg" alt="nuxt" />
   </div>
