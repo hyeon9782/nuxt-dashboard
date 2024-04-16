@@ -5,6 +5,11 @@ const { x, y } = useMouse();
 // plugins에서 정의한 함수 사용하기
 const { $hello } = useNuxtApp();
 $hello("dddd");
+
+// middleware 사용하기
+definePageMeta({
+  middleware: "log",
+});
 </script>
 
 <template>
