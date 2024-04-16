@@ -10,6 +10,12 @@ $hello("dddd");
 definePageMeta({
   middleware: "log",
 });
+
+// 전역 상태 가져오기
+const color = useColor();
+
+// pinia 가져오기
+const store = useCounterStore();
 </script>
 
 <template>
@@ -18,6 +24,12 @@ definePageMeta({
     <IconsBell />
     <!-- 마크다운을 읽는 패키지
     <ContentDoc /> -->
+    <Counter />
+    <Color />
+    index : {{ color }}
+    <button @click="color = 'black'">change</button>
+    <span>{{ store.count }}</span>
+
     <!-- <div>{{ x }} , {{ y }}</div> -->
     <img src="@/assets/flutter.png" alt="nuxt" />
     <img src="/chart.svg" alt="nuxt" />
