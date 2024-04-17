@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Product 1",
+    "price": 9.9,
+    "description": "good product"
+  },
+  {
+    "name": "Product 2",
+    "price": 9.9,
+    "description": "good product",
+  },
+  {
+    "name": "Product 3",
+    "price": 9.9,
+    "description": "good product",
+  },
+  {
+    "name": "Product 4",
+    "price": 9.9,
+    "description": "good product",
+  },
+  {
+    "name": "Product 5",
+    "price": 9.9,
+    "description": "good product",
+  },
+];
