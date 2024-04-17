@@ -12,4 +12,12 @@ export default defineNuxtConfig({
     },
   },
   modules: ["@vueuse/nuxt", "@nuxt/content", "@pinia/nuxt"],
+  routeRules: {
+    "/": { prerender: true },
+    "/my-profile": { static: true },
+    "/login": { swr: 3600 },
+    "/events": { ssr: true },
+    "/api/**": { cors: true },
+    "/old-page": { redirect: "/new-page" },
+  },
 });
