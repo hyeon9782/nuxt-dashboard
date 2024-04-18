@@ -20,5 +20,5 @@ export default defineNuxtConfig({
   //   "/api/**": { cors: true },
   //   "/old-page": { redirect: "/new-page" },
   // },
-  // ssr: false,
+  ssr: false,
 });
