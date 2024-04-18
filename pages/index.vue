@@ -29,7 +29,7 @@ const store = useCounterStore();
     index : {{ color }}
     <button @click="color = 'black'">change</button>
     <span>{{ store.count }}</span>
-
+    {{ formatNumber(1234) }}
     <!-- <div>{{ x }} , {{ y }}</div> -->
     <img src="@/assets/flutter.png" alt="nuxt" />
     <img src="/chart.svg" alt="nuxt" />
